@@ -8,9 +8,9 @@ class Belajar extends CI_Controller {
 		$this->load->model('m_data');
 	}
  
-	function user(){
-		$data['user'] = $this->m_data->ambil_data()->result();
-		$this->load->view('v_user.php',$data);
+	function mahasiswa(){
+		$data['mahasiswa'] = $this->m_data->ambil_data()->result();
+		$this->load->view('v_mahasiswa.php',$data);
 	}
  
 }
